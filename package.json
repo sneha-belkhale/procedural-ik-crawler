@@ -14,7 +14,7 @@
     "build": "webpack --colors",
     "start": "webpack-dev-server --content-base src",
     "lint": "node_modules/.bin/eslint src/",
-    "lint:fix": "node_modules/.bin/eslint src/ --fix",
+    "lint:fix": "node_modules/.bin/eslint src/ --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
@@ -40,5 +40,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
+  ]
 }
