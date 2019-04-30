@@ -6,8 +6,6 @@ export default class AlleyEnvironment {
   constructor(scene, worldGrid) {
     this.scene = scene;
     this.worldGrid = worldGrid;
-    this.modelPath = 'assets/scene/scene.gltf';
-
     this.loadSyncScene();
   }
 
@@ -49,7 +47,7 @@ export default class AlleyEnvironment {
     var thickness = this.thickness;
     var boxGeo = new THREE.BoxGeometry(thickness,thickness,thickness);
     var boxMat = new THREE.MeshBasicMaterial({
-      map: new THREE.TextureLoader().load('./assets/glowTex.png', (tex) => {
+      map: new THREE.TextureLoader().load('assets/glowTex.png', (tex) => {
         tex.minFilter = THREE.NearestFilter;
       }),
     });

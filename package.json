@@ -15,8 +15,6 @@
     "start": "webpack-dev-server --content-base src",
     "lint": "node_modules/.bin/eslint src/",
     "lint:fix": "node_modules/.bin/eslint src/ --fix",
-    "push": "rsync -azP --delete  public/assets/ kiko@104.236.135.111:~/hkr/assets",
-    "pull": "rsync -azP --delete  kiko@104.236.135.111:~/hkr/assets/ public/assets"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
@@ -43,11 +41,4 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint",
-      "pre-push": "yarn push",
-      "post-merge": "yarn pull"
-    }
-  }
 }
