@@ -1,13 +1,13 @@
-# *~*~*~<>~ cyborg rat in the city ~<>~*~*~* 
+# *~*~*~<>~ procedural ik crawler ~<>~*~*~* 
 
-### inspired by the futuristic cyberpunk HK & made with three.js
+### three.js web demo showcasing a procedurally animated rat using inverse kinematics, and a first person control with camera collision.
 
 
 ### Getting started
 
 ```
-git clone --recurse-submodules https://github.com/Kif11/hong-kong-rat
-cd hong-kong-rat
+git clone --recurse-submodules https://github.com/sneha-belkhale/procedural-ik-crawler
+cd procedural-ik-crawler
 yarn install
 # To pull assets
 yarn pull
