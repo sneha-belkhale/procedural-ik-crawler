@@ -27,14 +27,12 @@ export default class AlleyEnvironment {
     var m = new maze.Backtracker(15, 15);
     m.generate();
 
-    console.log(m);
     this.fillCubesForMazeTest(m, false, this.zSideFunction)
     this.fillCubesForMazeTest(m, true, this.zSideFunction)
     this.fillCubesForMazeTest(m, false, this.xSideFunction)
     this.fillCubesForMazeTest(m, true, this.xSideFunction)
     this.fillCubesForMazeTest(m, true, this.topSideFunction)
     this.fillCubesForMazeTest(m, false, this.topSideFunction)
-
   }
 
   fillCubesForMazeTest(maze, left, sidefx){
@@ -75,11 +73,5 @@ export default class AlleyEnvironment {
 
   topSideFunction(x,y,mesh,thickness,offset,t,width,height) {
     mesh.position.set(thickness*x - thickness*width/2,0 + (t-1)*thickness*(width-1)/2,thickness*y-thickness*height/2)
-  }
-
-  load() {
-  }
-  update() {
-
   }
 }
