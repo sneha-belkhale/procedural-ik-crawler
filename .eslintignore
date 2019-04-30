@@ -1,0 +1,9 @@
+node_modules/
+public/
+src/assets/
+
+# 3rd party
+src/libs/
+src/shaders/
+src/misc/
+src/modules/

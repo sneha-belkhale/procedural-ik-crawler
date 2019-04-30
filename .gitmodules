@@ -1,0 +1,4 @@
+[submodule "src/modules/THREE.IK"]
+	path = src/modules/THREE.IK
+	url = https://github.com/sneha-belkhale/THREE.IK
+	branch = streetRat
